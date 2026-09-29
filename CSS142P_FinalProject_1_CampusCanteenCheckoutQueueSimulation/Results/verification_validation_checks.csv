@@ -1,0 +1,4 @@
+check,passed,detail
+Zero-demand edge case,True,"students_served=0, avg_wait=0.0"
+Light-traffic case vs. M/G/1 analytical approximation,True,"simulated=0.489 min, analytical=0.625 min, rel_err=0.22"
+Monotonicity: wait time decreases as cashiers increase,True,"means=[np.float64(27.756), np.float64(1.521), np.float64(0.183)]"

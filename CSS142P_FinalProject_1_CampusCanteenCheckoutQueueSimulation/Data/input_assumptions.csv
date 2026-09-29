@@ -1,0 +1,10 @@
+parameter,value,distribution,source/justification
+Lunch rush duration,90 minutes (11:30 AM-1:00 PM),fixed window,"Canteen posted operating schedule; matches the decision-maker's stated peak period"
+Mean interarrival time,1.0 minute (~60 students/hour),Exponential,"Documented synthetic estimate based on typical single-line canteen throughput observed informally by the group during past lunch periods; treated as a documented assumption per project guidelines since no formal timing study was run"
+Mean service (checkout) time,1.6 minutes,Lognormal (CV=0.5),"Documented synthetic estimate reflecting a cashier scanning/bagging a meal and processing payment; lognormal chosen because service times are positive and right-skewed (occasional slow transactions)"
+Service time coefficient of variation,0.5,-,"Assumed moderate variability: most transactions are quick, a minority (large orders, cash counting) take noticeably longer"
+Number of cashiers (baseline),1,fixed,Current canteen operating policy
+Number of cashiers (Alternative A),2,fixed,Proposed staffing change under evaluation
+Number of cashiers (Alternative B),3,fixed,Upper-bound staffing change under evaluation
+Waiting time target,3 minutes,decision threshold,"Set by the group as a reasonable student-tolerance threshold for a short lunch period; used to judge whether a scenario is acceptable to the decision-maker"
+Sensitivity shock,+15% arrival rate,scenario variant,"Per project guidelines' example sensitivity analysis, applied uniformly to all three scenarios"
